@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About Corridor Water Testing: Helping families in Iowa's Corridor keep their drinking water safe through local resources and certified home test kits." />
+  <title>About | Corridor Water Testing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0; padding: 0;
+      color: #1e293b; background-color: #ffffff;
+    }
+
+    header.topbar {
+      background: white;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 0.75rem 2rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      position: sticky; top: 0; z-index: 100;
+    }
+    header.topbar img.logo {
+      height: 60px;
+    }
+    nav a {
+      margin-left: 2rem;
+      color: #1e293b;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    nav a:hover { color: #0A5C5A; }
+
+    .hero {
+      background: url('Images/WaterTap.jpg') center/cover no-repeat;
+      position: relative; color: white;
+      text-align: center; padding: 5rem 1rem;
+    }
+    .hero::after {
+      content: ""; position: absolute; inset: 0;
+      background: rgba(0,0,0,0.45);
+    }
+    .hero > div {
+      position: relative; z-index: 1;
+    }
+    .hero h1 {
+      font-size: 2.5rem; font-weight: 700; margin: 0;
+    }
+
+    main {
+      max-width: 900px; margin: 3rem auto; padding: 0 1.5rem;
+      display: flex; flex-direction: column; gap: 2rem;
+    }
+
+    section {
+      background: #f9fafb; border: 1px solid #e2e8f0;
+      border-radius: 8px; padding: 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    section h2 {
+      color: #0A5C5A; margin-top: 0;
+      font-size: 1.5rem;
+    }
+    section p {
+      line-height: 1.6; margin-bottom: 1rem;
+    }
+
+    footer {
+      background: #1e293b; color: white; text-align: center; padding: 3rem 1rem;
+      margin-top: 4rem; font-size: 0.95rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      nav a { margin-left: 1rem; font-size: 0.9rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <img src="images/logo.png" alt="Corridor Water Testing" class="logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="water-testing-iowa-city.html">Iowa City</a>
+      <a href="water-testing-cedar-rapids.html">Cedar Rapids</a>
+      <a href="faq.html">FAQ</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>About Corridor Water Testing</h1>
+    </div>
+  </section>
+
+  <main>
+    <section>
+      <h2>Our Mission</h2>
+      <p>At Corridor Water Testing, our goal is simple: help families in Johnson, Linn, and Iowa Counties feel confident about the water they drink. Clean water is the foundation of a healthy home, and we believe every resident—whether on city water or a private well—deserves peace of mind.</p>
+    </section>
+
+    <section>
+      <h2>Why We Started</h2>
+      <p>Many Iowans rely on private wells, and even city water can face risks from old plumbing or lead pipes. Yet, water issues are often invisible—you can’t always see or smell contamination. We created this resource to connect residents with trusted local programs, certified labs, and at‑home test kits that make water safety easier than ever.</p>
+    </section>
+
+    <section>
+      <h2>Local Resources</h2>
+      <p>We highlight local programs, including:</p>
+      <ul>
+        <li><a href="https://www.johnsoncountyiowa.gov/public-health/well-testing" target="_blank">Johnson County Public Health – Well Testing</a></li>
+        <li><a href="https://www.linncountyiowa.gov/277/Laboratory-Services" target="_blank">Linn County Laboratory Services</a></li>
+        <li><a href="https://cheec.uiowa.edu/get-lead-out-iowa" target="_blank">Get the Lead Out Iowa</a></li>
+      </ul>
+      <p>We also recommend certified home kits like <a href="https://mytapscore.com/" target="_blank">TapScore</a> for easy, lab‑verified results without leaving your home.</p>
+    </section>
+
+    <section>
+      <h2>Our Promise</h2>
+      <p>We focus on clear, trustworthy information—not fear. Testing your water shouldn’t be complicated or overwhelming. We give you the tools and resources to protect your home, your family, and your peace of mind.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Corridor Water Testing. Helping the Corridor drink safely.</p>
+  </footer>
+</body>
+</html>

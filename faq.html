@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Frequently Asked Questions about water testing in Iowa's Corridor." />
+  <title>FAQ | Corridor Water Testing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0; padding: 0;
+      color: #1e293b; background-color: #ffffff;
+    }
+
+    header.topbar {
+      background: white;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 0.75rem 2rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      position: sticky; top: 0; z-index: 100;
+    }
+    header.topbar img.logo {
+      height: 60px;
+    }
+    nav a {
+      margin-left: 2rem;
+      color: #1e293b;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    nav a:hover { color: #0A5C5A; }
+
+    .hero {
+      background: url('Images/WaterTap.jpg') center/cover no-repeat;
+      position: relative; color: white;
+      text-align: center; padding: 5rem 1rem;
+    }
+    .hero::after {
+      content: ""; position: absolute; inset: 0;
+      background: rgba(0,0,0,0.45);
+    }
+    .hero > div {
+      position: relative; z-index: 1;
+    }
+    .hero h1 {
+      font-size: 2.5rem; font-weight: 700; margin: 0;
+    }
+
+    main {
+      max-width: 900px; margin: 3rem auto; padding: 0 1rem;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid #e2e8f0;
+      padding: 1rem 0;
+    }
+    .faq-question {
+      display: flex; justify-content: space-between; align-items: center;
+      font-weight: 600; font-size: 1.1rem; cursor: pointer;
+      color: #0A5C5A;
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+      font-size: 0.95rem;
+      color: #1e293b;
+    }
+    .faq-item.active .faq-answer {
+      max-height: 600px;
+      padding-top: 0.5rem;
+    }
+    .faq-toggle {
+      font-size: 1.5rem;
+      transition: transform 0.3s;
+    }
+    .faq-item.active .faq-toggle {
+      transform: rotate(45deg);
+    }
+
+    footer {
+      background: #1e293b; color: white; text-align: center; padding: 3rem 1rem;
+      margin-top: 4rem; font-size: 0.95rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      nav a { margin-left: 1rem; font-size: 0.9rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <img src="images/logo.png" alt="Corridor Water Testing" class="logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="water-testing-iowa-city.html">Iowa City</a>
+      <a href="water-testing-cedar-rapids.html">Cedar Rapids</a>
+      <a href="faq.html">FAQ</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Frequently Asked Questions</h1>
+    </div>
+  </section>
+
+  <main>
+    <div class="faq-item">
+      <div class="faq-question">
+        How often should I test my well water?
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        We recommend testing at least once a year for bacteria and nitrates. Test more often if your well is old, after flooding, nearby construction, or if you notice changes in taste, color, or odor.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        What if I’m on city water—do I still need to test?
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        City water is regularly tested and you should be able to request/view the testing that shows it meets federal and state safety standards.  
+        However, contaminants like <b>lead</b> can enter from old plumbing inside your home.  
+        Testing your tap once—especially in older homes—provides extra peace of mind.  
+        Consider a certified kit like <a href="https://mytapscore.com/" target="_blank">TapScore</a> for an easy option.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        Where can I get my water tested locally?
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        • Johnson County: <a href="https://www.johnsoncountyiowa.gov/public-health/well-testing" target="_blank">Well Testing Program</a>  
+        <br/>
+		• Linn County: <a href="https://www.linncountyiowa.gov/277/Laboratory-Services" target="_blank">Laboratory Services</a>  
+        <br/>
+		• Iowa County: Contact your local public health department.  
+        <br><br>
+        For more comprehensive testing, consider a certified at‑home kit like <a href="https://mytapscore.com/" target="_blank">TapScore</a>.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        Can I test for lead and other contaminants at home?
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        Yes. At‑home kits like <a href="https://mytapscore.com/" target="_blank">TapScore</a> let you collect a sample and receive a lab‑certified report online, covering lead, nitrates, bacteria, and more.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        What are the signs that my water might be unsafe?
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        Signs can include strange odors, cloudy water, staining on fixtures, or sudden changes in taste.  
+        However, many contaminants like nitrates and lead have **no taste, color, or smell**, so regular testing is the only way to know.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        What if my water test comes back unsafe?
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        Stop using the water for drinking and cooking immediately.  
+        Contact your local public health department for guidance.  
+        Use bottled or filtered water until the problem is resolved.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        How can I get extra peace of mind about my water?
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        Even if your water is safe today, regular annual testing and occasional comprehensive testing provide the best peace of mind.  
+        A certified home test kit like <a href="https://mytapscore.com/" target="_blank">TapScore</a> makes this easy, with lab results delivered to your email.
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Corridor Water Testing. Providing trusted water safety information for Johnson, Linn, and Iowa Counties.</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.faq-item').forEach(item => {
+      item.querySelector('.faq-question').addEventListener('click', () => {
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
