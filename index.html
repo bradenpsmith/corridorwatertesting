@@ -111,22 +111,38 @@
       background: #1e293b; color: white; text-align: center; padding: 3rem 1rem;
       margin-top: 4rem; font-size: 0.95rem;
     }
-	.menu-toggle {
-  background:none; border:none;
-  font-size:2rem; color:#1e293b;
-  display:block;
+	/* Default desktop view */
+.menu-toggle {
+  display: none; /* hide hamburger by default */
 }
 
 .mobile-nav {
-  display:none; flex-direction:column;
-  background:white; padding:1rem;
-  position:absolute; top:100%; right:0; width:200px;
-  box-shadow:0 2px 6px rgba(0,0,0,0.2);
+  display: flex;
+  gap: 2rem;
 }
 
-.mobile-nav a { padding:0.75rem 1rem; }
+/* Mobile styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* show hamburger */
+  }
 
-.menu-open .mobile-nav { display:flex; }
+  .mobile-nav {
+    display: none; /* hide menu until opened */
+    flex-direction: column;
+    background: white;
+    padding: 1rem;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+
+  header.menu-open .mobile-nav {
+    display: flex; /* show when hamburger is clicked */
+  }
+}
 
   </style>
 
