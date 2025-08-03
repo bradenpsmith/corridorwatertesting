@@ -111,18 +111,37 @@
       background: #1e293b; color: white; text-align: center; padding: 3rem 1rem;
       margin-top: 4rem; font-size: 0.95rem;
     }
+	.menu-toggle {
+  background:none; border:none;
+  font-size:2rem; color:#1e293b;
+  display:block;
+}
+
+.mobile-nav {
+  display:none; flex-direction:column;
+  background:white; padding:1rem;
+  position:absolute; top:100%; right:0; width:200px;
+  box-shadow:0 2px 6px rgba(0,0,0,0.2);
+}
+
+.mobile-nav a { padding:0.75rem 1rem; }
+
+.menu-open .mobile-nav { display:flex; }
+
   </style>
+
 </head>
 <body>
   <header class="topbar">
     <img src="images/logo.png" alt="Corridor Water Testing" class="logo">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="water-testing-iowa-city.html">Iowa City</a>
-      <a href="water-testing-cedar-rapids.html">Cedar Rapids</a>
-      <a href="faq.html">FAQ</a>
-      <a href="about.html">About</a>
-    </nav>
+    <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+  <nav class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="water-testing-iowa-city.html">Iowa City</a>
+    <a href="water-testing-cedar-rapids.html">Cedar Rapids</a>
+    <a href="faq.html">FAQ</a>
+    <a href="about.html">About</a>
+  </nav>
   </header>
 
   <section class="hero">
@@ -154,7 +173,12 @@
       <p>Need help deciding? Check our <a href="faq.html">Water Testing FAQ</a>.</p>
     </section>
   </main>
+  <script>
+  document.querySelector('.menu-toggle').addEventListener('click', () => {
+  document.querySelector('header').classList.toggle('menu-open');
+});
 
+  </script>
   <footer>
     <p>&copy; 2025 Corridor Water Testing. Providing local guidance for well and water testing in Iowa’s Corridor.</p>
   </footer>
