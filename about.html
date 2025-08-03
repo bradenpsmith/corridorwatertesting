@@ -110,18 +110,50 @@
       }
       nav a { margin-left: 1rem; font-size: 0.9rem; }
     }
+	/* Default desktop view */
+.menu-toggle {
+  display: none; /* hide hamburger by default */
+}
+
+.mobile-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* show hamburger */
+  }
+
+  .mobile-nav {
+    display: none; /* hide menu until opened */
+    flex-direction: column;
+    background: white;
+    padding: 1rem;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+
+  header.menu-open .mobile-nav {
+    display: flex; /* show when hamburger is clicked */
+  }
+}
   </style>
 </head>
 <body>
   <header class="topbar">
     <img src="images/logo.png" alt="Corridor Water Testing" class="logo">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="water-testing-iowa-city.html">Iowa City</a>
-      <a href="water-testing-cedar-rapids.html">Cedar Rapids</a>
-      <a href="faq.html">FAQ</a>
-      <a href="about.html">About</a>
-    </nav>
+      <nav class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="water-testing-iowa-city.html">Iowa City</a>
+    <a href="water-testing-cedar-rapids.html">Cedar Rapids</a>
+    <a href="faq.html">FAQ</a>
+    <a href="about.html">About</a>
+  </nav>
   </header>
 
   <section class="hero">
@@ -157,7 +189,12 @@
       <p>We focus on clear, trustworthy information—not fear. Testing your water shouldn’t be complicated or overwhelming. We give you the tools and resources to protect your home, your family, and your peace of mind.</p>
     </section>
   </main>
+  <script>
+  document.querySelector('.menu-toggle').addEventListener('click', () => {
+  document.querySelector('header').classList.toggle('menu-open');
+});
 
+  </script>
   <footer>
     <p>&copy; 2025 Corridor Water Testing. Helping the Corridor drink safely.</p>
   </footer>

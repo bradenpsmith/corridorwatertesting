@@ -37,6 +37,7 @@
   ],
   "description": "Water testing resoures in Iowa City and Johnson County, including private well testing and lead awareness programs."
 }
+
 </script>
   <style>
          * { box-sizing: border-box; }
@@ -115,18 +116,50 @@
       background: #1e293b; color: white; text-align: center; padding: 3rem 1rem;
       margin-top: 4rem; font-size: 0.95rem;
     }
+	/* Default desktop view */
+.menu-toggle {
+  display: none; /* hide hamburger by default */
+}
+
+.mobile-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* show hamburger */
+  }
+
+  .mobile-nav {
+    display: none; /* hide menu until opened */
+    flex-direction: column;
+    background: white;
+    padding: 1rem;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+
+  header.menu-open .mobile-nav {
+    display: flex; /* show when hamburger is clicked */
+  }
+}
   </style>
 </head>
 <body>
   <header class="topbar">
     <img src="images/logo.png" alt="Corridor Water Testing" class="logo">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="water-testing-iowa-city.html">Iowa City</a>
-      <a href="water-testing-cedar-rapids.html">Cedar Rapids</a>
-      <a href="faq.html">FAQ</a>
-      <a href="about.html">About</a>
-    </nav>
+      <nav class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="water-testing-iowa-city.html">Iowa City</a>
+    <a href="water-testing-cedar-rapids.html">Cedar Rapids</a>
+    <a href="faq.html">FAQ</a>
+    <a href="about.html">About</a>
+  </nav>
   </header>
 
   <section class="hero">
@@ -163,7 +196,12 @@
       </p>
     </section>
   </main>
+  <script>
+  document.querySelector('.menu-toggle').addEventListener('click', () => {
+  document.querySelector('header').classList.toggle('menu-open');
+});
 
+  </script>
   <footer>
     <p>&copy; 2025 Corridor Water Testing. Links provided as a public resource; affiliate program not yet active.</p>
   </footer>
