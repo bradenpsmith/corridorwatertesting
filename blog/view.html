@@ -5,20 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Loading... | Corridor Water Testing</title>
   <meta name="description" content="Read the latest well water testing tips and guides.">
-   <meta name="robots" content="noindex, nofollow">
+  <meta name="robots" content="noindex, nofollow">
   <link rel="stylesheet" href="../style.css">
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <style>
-    main { max-width: 800px; margin: 4rem auto; padding: 0 1.5rem; }
-    #post-content img { max-width: 100%; border-radius: 6px; }
-	#content img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 6px;
-  margin: 1.5rem 0;
-  display: block;
-}
-  </style>
+
 </head>
 <body>
   <header class="topbar">
@@ -32,27 +22,34 @@
       <a href="../about.html">About</a>
     </nav>
   </header>
+  </header>
 
   <main>
     <article id="post-content"></article>
   </main>
 
-<footer>
-  <div class="footer-content">
-    <p>&copy; 2025 Corridor Water Testing</p>
-    <p class="footer-note">
-      Corridor Water Testing provides guidance and affiliate links to certified home water testing kits.
-      We do not perform testing or collect water samples.
-    </p>
-    <nav class="footer-links">
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms & Disclaimer</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</footer>
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Corridor Water Testing</p>
+      <p class="footer-note">
+        Corridor Water Testing provides guidance and affiliate links to certified home water testing kits.
+        We do not perform testing or collect water samples.
+      </p>
+      <nav class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms & Disclaimer</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
 
   <script>
+    // Mobile menu toggle
+    document.querySelector(".menu-toggle").addEventListener("click", () => {
+      document.querySelector(".main-nav").classList.toggle("active");
+    });
+
+    // Load post content
     const params = new URLSearchParams(window.location.search);
     const slug = params.get('post');
 

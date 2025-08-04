@@ -1,0 +1,75 @@
+/* =====================
+   FAQ Page Styles
+   ===================== */
+
+/* Override global layout to stack items */
+main {
+  display: block;  /* Force stacking instead of grid */
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+}
+
+/* Individual FAQ item */
+.faq-item {
+  display: block;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 1rem 0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.faq-item:hover {
+  background: #f9fafb;
+}
+
+/* FAQ Question */
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #0A5C5A;
+}
+
+.faq-toggle {
+  font-size: 1.3rem;
+  color: #0A5C5A;
+  transition: transform 0.2s;
+}
+
+/* Rotate + when open */
+.faq-item.active .faq-toggle {
+  transform: rotate(45deg);
+}
+
+/* FAQ Answer */
+.faq-answer {
+  display: none;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Optional fade-in effect */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Links inside answers */
+.faq-answer a {
+  color: #0A5C5A;
+  text-decoration: underline;
+}
+
+.faq-answer a:hover {
+  color: #074543;
+}

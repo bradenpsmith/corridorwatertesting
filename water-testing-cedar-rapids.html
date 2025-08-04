@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="images/favicon.png" sizes="256x256">
 <script type="application/ld+json">
 {
@@ -39,150 +40,13 @@
 }
 
 </script>
-  <style>
-         * { box-sizing: border-box; }
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0; padding: 0;
-      color: #1e293b; background-color: #ffffff;
-    }
 
-    header.topbar {
-      background: white;
-      display: flex; justify-content: space-between; align-items: center;
-      padding: 0.75rem 2rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-      position: sticky; top: 0; z-index: 100;
-    }
-    header.topbar img.logo {
-      height: 60px;
-    }
-    nav a {
-      margin-left: 2rem;
-      color: #1e293b;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.2s;
-    }
-    nav a:hover { color: #0A5C5A; }
-
-    .hero {
-      background: url('images/WaterTap.jpg') center/cover no-repeat;
-      position: relative; color: white;
-      text-align: center; padding: 6rem 1rem 6rem;
-    }
-    .hero::after {
-      content: ""; position: absolute; inset: 0;
-      background: rgba(0,0,0,0.45);
-    }
-    .hero > div {
-      position: relative; z-index: 1;
-    }
-    .hero h1 {
-      font-size: 3rem; font-weight: 700; margin: 0 0 1rem;
-    }
-    .hero p {
-      font-size: 1.25rem; margin: 0 0 2rem;
-    }
-
-    .cta-button {
-      display: inline-block;
-      background: #0A5C5A; color: white; padding: 1rem 2rem;
-      border-radius: 4px; text-decoration: none; font-weight: 600;
-      transition: background 0.3s;
-    }
-    .cta-button:hover { background: #074543; }
-
-    main {
-      max-width: 1200px; margin: 4rem auto; padding: 0 1.5rem;
-      display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
-
-    section.card {
-      background: #f9fafb; border: 1px solid #e2e8f0;
-      border-radius: 8px; padding: 2rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    section.card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-    }
-    section.card h2 {
-      color: #0A5C5A; margin-top: 0; font-size: 1.5rem;
-    }
-
-    footer {
-      background: #1e293b; color: white; text-align: center; padding: 3rem 1rem;
-      margin-top: 4rem; font-size: 0.95rem;
-    }
-	/* Default desktop view */
-.menu-toggle {
-  display: none; /* hide hamburger by default */
-}
-
-.mobile-nav {
-  display: flex;
-  gap: 2rem;
-}
-
-/* Mobile styles */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block; /* show hamburger */
-  }
-
-  .mobile-nav {
-    display: none; /* hide menu until opened */
-    flex-direction: column;
-    background: white;
-    padding: 1rem;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 200px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  }
-
-  header.menu-open .mobile-nav {
-    display: flex; /* show when hamburger is clicked */
-  }
-}
-footer {
-  background: #1e293b;
-  color: white;
-  text-align: center;
-  padding: 2rem 1rem;
-  font-size: 0.9rem;
-}
-footer .footer-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-footer .footer-note {
-  margin: 0.5rem 0 1rem;
-  opacity: 0.85;
-}
-footer .footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
-footer .footer-links a {
-  color: #ffffff;
-  text-decoration: none;
-}
-footer .footer-links a:hover {
-  text-decoration: underline;
-}
-
-  </style>
 </head>
 <body>
   <header class="topbar">
     <img src="images/logo.png" alt="Corridor Water Testing" class="logo">
-      <nav class="mobile-nav">
+    <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+  <nav class="mobile-nav">
     <a href="index.html">Home</a>
     <a href="water-testing-iowa-city.html">Iowa City</a>
     <a href="water-testing-cedar-rapids.html">Cedar Rapids</a>
