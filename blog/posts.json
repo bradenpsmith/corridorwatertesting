@@ -22,5 +22,13 @@
     "excerpt": "Make sure your well is safe and ready for spring with these tips.",
     "file": "2025-02-01-spring-checklist.md",
     "image": "../images/blog/spring.jpg"
-  }
+  },
+  {
+  "slug": "shocking-well-water",
+  "title": "How to Shock Your Well Water Safely",
+  "date": "2025-03-01",
+  "excerpt": "Learn when and how to disinfect your well to eliminate bacteria without harming your system.",
+  "file": "2025-03-01-shocking-well-water.md",
+  "image": "../images/blog/shock-well.jpg"
+}
 ]
