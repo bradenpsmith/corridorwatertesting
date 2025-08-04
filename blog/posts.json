@@ -1,34 +1,44 @@
 [
   {
-    "slug": "testing-basics",
-    "title": "Well Water Testing Basics",
-    "date": "2025-01-15",
-    "excerpt": "Learn why annual well water testing is important for your health and home.",
-    "file": "2025-01-15-testing-basics.md",
-    "image": "../images/blog/testing.jpg"
+    "title": "Why Testing Your Well Water Every Year is a Smart Move",
+    "slug": "annual-well-water-testing-benefits",
+    "date": "2025-08-04",
+    "excerpt": "Annual testing keeps your drinking water safe and gives you peace of mind\u2014here\u2019s why it\u2019s so important for Iowa well owners.",
+    "image": "../images/blog/well_water_1.jpg"
   },
   {
-    "slug": "how-to-test-nitrates",
-    "title": "How to Test for Nitrates in Well Water",
-    "date": "2025-01-20",
-    "excerpt": "High nitrate levels can be dangerous, especially for infants. Here's how to test.",
-    "file": "2025-01-20-how-to-test-nitrates.md",
-    "image": "../images/blog/nitrates.jpg"
+    "title": "Top 5 Signs It\u2019s Time to Test Your Well Water",
+    "slug": "signs-to-test-well-water",
+    "date": "2025-08-03",
+    "excerpt": "Changes in taste, flooding, or a new baby at home? These are all clues it\u2019s time to check your water.",
+    "image": "../images/blog/well_water_2.jpg"
   },
   {
-    "slug": "spring-checklist",
-    "title": "Spring Well Water Safety Checklist",
-    "date": "2025-02-01",
-    "excerpt": "Make sure your well is safe and ready for spring with these tips.",
-    "file": "2025-02-01-spring-checklist.md",
-    "image": "../images/blog/spring.jpg"
+    "title": "What\u2019s in Eastern Iowa Water? Common Contaminants You Should Know",
+    "slug": "common-iowa-water-contaminants",
+    "date": "2025-08-02",
+    "excerpt": "From nitrates to bacteria, learn what could be in your well water\u2014and why testing matters.",
+    "image": "../images/blog/well_water_3.jpg"
   },
   {
-  "slug": "shocking-well-water",
-  "title": "How to Shock Your Well Water Safely",
-  "date": "2025-03-01",
-  "excerpt": "Learn when and how to disinfect your well to eliminate bacteria without harming your system.",
-  "file": "2025-03-01-shocking-well-water.md",
-  "image": "../images/blog/shock-well.jpg"
-}
+    "title": "How to Read Your Well Water Test Results (Without Freaking Out)",
+    "slug": "reading-well-water-results",
+    "date": "2025-08-01",
+    "excerpt": "Confused by terms like coliform and nitrates? Here\u2019s a simple guide to understanding your results.",
+    "image": "../images/blog/well_water_4.jpg"
+  },
+  {
+    "title": "Well Water Safety Tips for Families with Kids and Pets",
+    "slug": "well-water-safety-for-families",
+    "date": "2025-07-31",
+    "excerpt": "Safe drinking water is especially important for little ones and pets. Here\u2019s how to protect your family.",
+    "image": "../images/blog/well_water_5.jpg"
+  },
+  {
+    "title": "Local Resources: Where to Get Your Well Water Tested in Eastern Iowa",
+    "slug": "iowa-well-water-testing-resources",
+    "date": "2025-07-30",
+    "excerpt": "From Johnson County to the University of Iowa, here are the top places to test your well water locally.",
+    "image": "../images/blog/well_water_6.jpg"
+  }
 ]
