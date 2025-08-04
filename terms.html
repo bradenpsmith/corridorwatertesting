@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Terms of Use and Disclaimers for Corridor Water Testing, providing guidance and affiliate links for certified well water testing kits in Iowa." />
+  <title>Terms & Disclaimer | Corridor Water Testing</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0; padding: 0;
+      color: #1e293b; background-color: #ffffff;
+    }
+    header.topbar {
+      background: white;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 0.75rem 2rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      position: sticky; top: 0; z-index: 100;
+    }
+    header.topbar img.logo { height: 60px; }
+    nav a {
+      margin-left: 2rem; color: #1e293b;
+      text-decoration: none; font-weight: 500;
+    }
+    nav a:hover { color: #0A5C5A; }
+
+    main {
+      max-width: 800px; margin: 3rem auto; padding: 0 1.5rem;
+      line-height: 1.6;
+    }
+    main h1 { font-size: 2rem; color: #0A5C5A; margin-bottom: 1rem; }
+    main h2 { margin-top: 2rem; font-size: 1.3rem; color: #0A5C5A; }
+    
+    footer {
+      background: #1e293b; color: white;
+      text-align: center; padding: 3rem 1rem;
+      margin-top: 4rem; font-size: 0.95rem;
+    }
+
+    /* Mobile nav */
+    .menu-toggle { display: none; }
+    .mobile-nav { display: flex; gap: 2rem; }
+    @media (max-width: 768px) {
+      .menu-toggle { display: block; }
+      .mobile-nav { display: none; flex-direction: column; background: white; position: absolute; top: 100%; right: 0; width: 200px; padding: 1rem; box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
+      header.menu-open .mobile-nav { display: flex; }
+    }
+	footer {
+  background: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+}
+footer .footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+footer .footer-note {
+  margin: 0.5rem 0 1rem;
+  opacity: 0.85;
+}
+footer .footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+footer .footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+}
+footer .footer-links a:hover {
+  text-decoration: underline;
+}
+
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <img src="images/logo.png" alt="Corridor Water Testing" class="logo">
+    <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+    <nav class="mobile-nav">
+      <a href="index.html">Home</a>
+      <a href="water-testing-iowa-city.html">Iowa City</a>
+      <a href="water-testing-cedar-rapids.html">Cedar Rapids</a>
+      <a href="faq.html">FAQ</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Terms of Use & Disclaimer</h1>
+    <p>By using Corridor Water Testing, you agree to the following terms and conditions.</p>
+
+    <h2>1. Informational Purpose Only</h2>
+    <p>Corridor Water Testing provides information and links to certified well water testing kits and resources in Iowa. We do not perform water testing, collect samples, or provide laboratory services directly.</p>
+
+    <h2>2. Affiliate Disclosure</h2>
+    <p>Some links on this website are affiliate links, meaning we may earn a commission if you make a purchase. This does not affect the price you pay and helps support the site.</p>
+
+    <h2>3. No Professional Advice</h2>
+    <p>The content on this website is for general informational purposes only. It should not be considered professional, medical, or environmental advice. Always consult with certified water testing labs or local health authorities for guidance.</p>
+
+    <h2>4. Limitation of Liability</h2>
+    <p>Corridor Water Testing is not responsible for any actions taken based on the information on this site or results from third‑party products and services. Use of the site and any linked resources is at your own risk.</p>
+
+    <h2>5. External Links</h2>
+    <p>Our site links to external websites and laboratories we do not control. We are not responsible for their content, accuracy, or policies.</p>
+
+    <h2>6. Updates</h2>
+    <p>We may update these terms at any time. Continued use of the site constitutes acceptance of any changes.</p>
+  </main>
+
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+      document.querySelector('header').classList.toggle('menu-open');
+    });
+  </script>
+
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2025 Corridor Water Testing</p>
+    <p class="footer-note">
+      Corridor Water Testing provides guidance and affiliate links to certified home water testing kits.
+      We do not perform testing or collect water samples.
+    </p>
+    <nav class="footer-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms & Disclaimer</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

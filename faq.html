@@ -151,6 +151,35 @@
     display: flex; /* show when hamburger is clicked */
   }
 }
+footer {
+  background: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+}
+footer .footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+footer .footer-note {
+  margin: 0.5rem 0 1rem;
+  opacity: 0.85;
+}
+footer .footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+footer .footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+}
+footer .footer-links a:hover {
+  text-decoration: underline;
+}
+
   </style>
 </head>
 <body>
@@ -261,9 +290,20 @@
 });
 
   </script>
-  <footer>
-    <p>&copy; 2025 Corridor Water Testing. Providing trusted water safety information for Johnson, Linn, and Iowa Counties.</p>
-  </footer>
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2025 Corridor Water Testing</p>
+    <p class="footer-note">
+      Corridor Water Testing provides guidance and affiliate links to certified home water testing kits.
+      We do not perform testing or collect water samples.
+    </p>
+    <nav class="footer-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms & Disclaimer</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</footer>
 
   <script>
     document.querySelectorAll('.faq-item').forEach(item => {

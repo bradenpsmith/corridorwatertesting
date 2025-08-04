@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Privacy Policy for Corridor Water Testing, detailing how we handle visitor data, affiliate links, and analytics." />
+  <title>Privacy Policy | Corridor Water Testing</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0; padding: 0;
+      color: #1e293b; background-color: #ffffff;
+    }
+    header.topbar {
+      background: white;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 0.75rem 2rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      position: sticky; top: 0; z-index: 100;
+    }
+    header.topbar img.logo { height: 60px; }
+    nav a {
+      margin-left: 2rem; color: #1e293b;
+      text-decoration: none; font-weight: 500;
+    }
+    nav a:hover { color: #0A5C5A; }
+
+    main {
+      max-width: 800px; margin: 3rem auto; padding: 0 1.5rem;
+      line-height: 1.6;
+    }
+    main h1 { font-size: 2rem; color: #0A5C5A; margin-bottom: 1rem; }
+    main h2 { margin-top: 2rem; font-size: 1.3rem; color: #0A5C5A; }
+    
+    footer {
+      background: #1e293b; color: white;
+      text-align: center; padding: 3rem 1rem;
+      margin-top: 4rem; font-size: 0.95rem;
+    }
+
+    /* Mobile nav */
+    .menu-toggle { display: none; }
+    .mobile-nav { display: flex; gap: 2rem; }
+    @media (max-width: 768px) {
+      .menu-toggle { display: block; }
+      .mobile-nav { display: none; flex-direction: column; background: white; position: absolute; top: 100%; right: 0; width: 200px; padding: 1rem; box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
+      header.menu-open .mobile-nav { display: flex; }
+    }
+	footer {
+  background: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+}
+footer .footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+footer .footer-note {
+  margin: 0.5rem 0 1rem;
+  opacity: 0.85;
+}
+footer .footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+footer .footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+}
+footer .footer-links a:hover {
+  text-decoration: underline;
+}
+
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <img src="images/logo.png" alt="Corridor Water Testing" class="logo">
+    <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+    <nav class="mobile-nav">
+      <a href="index.html">Home</a>
+      <a href="water-testing-iowa-city.html">Iowa City</a>
+      <a href="water-testing-cedar-rapids.html">Cedar Rapids</a>
+      <a href="faq.html">FAQ</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Privacy Policy</h1>
+    <p>Effective Date: January 1, 2025</p>
+    <p>Corridor Water Testing respects your privacy. This policy explains how we collect, use, and protect your information when you visit our site.</p>
+
+    <h2>1. Information We Collect</h2>
+    <ul>
+      <li>Basic analytics data, such as page views and referral sources (via Google Analytics).</li>
+      <li>Non‑personal technical data such as browser type, device type, and approximate location.</li>
+      <li>We do not collect names, email addresses, or personal data unless you voluntarily submit it through a form.</li>
+    </ul>
+
+    <h2>2. How We Use This Information</h2>
+    <ul>
+      <li>To understand traffic patterns and improve the website experience.</li>
+      <li>To monitor the performance of affiliate links and site functionality.</li>
+    </ul>
+
+    <h2>3. Affiliate Links</h2>
+    <p>Our site includes affiliate links (e.g., Tap Score). When you click an affiliate link, cookies may be set by the third‑party site to track referrals and purchases.</p>
+
+    <h2>4. Cookies</h2>
+    <p>We may use cookies for analytics and affiliate tracking. You can disable cookies in your browser, but some features may not function correctly.</p>
+
+    <h2>5. Third‑Party Services</h2>
+    <ul>
+      <li><strong>Google Analytics</strong> – Used to monitor traffic and improve the site. Data is aggregated and anonymized.</li>
+      <li><strong>Affiliate Networks</strong> – May track purchases for commission purposes.</li>
+    </ul>
+
+    <h2>6. Data Security</h2>
+    <p>We do not store sensitive personal information on this site. Affiliate transactions and payments occur on third‑party sites under their policies.</p>
+
+    <h2>7. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Continued use of the site constitutes your acceptance of the revised policy.</p>
+  </main>
+
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+      document.querySelector('header').classList.toggle('menu-open');
+    });
+  </script>
+
+  <footer>
+  <div class="footer-content">
+    <p>&copy; 2025 Corridor Water Testing</p>
+    <p class="footer-note">
+      Corridor Water Testing provides guidance and affiliate links to certified home water testing kits.
+      We do not perform testing or collect water samples.
+    </p>
+    <nav class="footer-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms & Disclaimer</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
