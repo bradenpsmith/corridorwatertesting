@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "testing-basics",
+    "title": "Well Water Testing Basics",
+    "date": "2025-01-15",
+    "excerpt": "Learn why annual well water testing is important for your health and home.",
+    "file": "2025-01-15-testing-basics.md",
+    "image": "../images/blog/testing.jpg"
+  },
+  {
+    "slug": "how-to-test-nitrates",
+    "title": "How to Test for Nitrates in Well Water",
+    "date": "2025-01-20",
+    "excerpt": "High nitrate levels can be dangerous, especially for infants. Here's how to test.",
+    "file": "2025-01-20-how-to-test-nitrates.md",
+    "image": "../images/blog/nitrates.jpg"
+  },
+  {
+    "slug": "spring-checklist",
+    "title": "Spring Well Water Safety Checklist",
+    "date": "2025-02-01",
+    "excerpt": "Make sure your well is safe and ready for spring with these tips.",
+    "file": "2025-02-01-spring-checklist.md",
+    "image": "../images/blog/spring.jpg"
+  }
+]
